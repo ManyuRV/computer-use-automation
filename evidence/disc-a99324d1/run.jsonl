@@ -1,0 +1,13 @@
+{"ts": 1789317473.3125947, "run_id": "disc-a99324d1", "kind": "run_start", "goal": "open a new savings sub-account for member 12345 with an opening deposit of 100 dollars and reach the confirmation screen", "entry": "http://localhost:8377/"}
+{"ts": 1789317474.4315057, "run_id": "disc-a99324d1", "kind": "decision", "step": "1", "action_kind": "fill", "reason": "Filling in the member ID to search for the member.", "name": "Member ID:"}
+{"ts": 1789317478.2416637, "run_id": "disc-a99324d1", "kind": "decision", "step": "2", "action_kind": "click", "reason": "Proceeding to search for the member.", "name": "Search"}
+{"ts": 1789317479.3234615, "run_id": "disc-a99324d1", "kind": "decision", "step": "3", "action_kind": "navigate", "reason": "Navigating to the new sub-account creation page.", "name": "Open a new sub-account"}
+{"ts": 1789317479.9908683, "run_id": "disc-a99324d1", "kind": "decision", "step": "4", "action_kind": "select", "reason": "Selecting the account type for the new sub-account.", "name": "Account type:"}
+{"ts": 1789317483.754924, "run_id": "disc-a99324d1", "kind": "decision", "step": "5", "action_kind": "fill", "reason": "Filling in the initial deposit amount.", "name": "Initial deposit ($):"}
+{"ts": 1789317487.442712, "run_id": "disc-a99324d1", "kind": "decision", "step": "6", "action_kind": "click", "reason": "Submitting the application to open the new savings sub-account.", "name": "Submit Application"}
+{"ts": 1789317487.4427905, "run_id": "disc-a99324d1", "kind": "risky_action", "step": "6", "name": "Submit Application", "handling": "confirm"}
+{"ts": 1789317487.4887207, "run_id": "disc-a99324d1", "kind": "intervention_raised", "reason": "risky action 'Submit Application' requires human confirmation", "step": "6"}
+{"ts": 1789317530.101095, "run_id": "disc-a99324d1", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317530.101192, "run_id": "disc-a99324d1", "kind": "resumed_after_human", "step": "6"}
+{"ts": 1789317531.071439, "run_id": "disc-a99324d1", "kind": "decision", "step": "7", "action_kind": "done", "reason": "Reached the confirmation screen.", "name": ""}
+{"ts": 1789317531.071552, "run_id": "disc-a99324d1", "kind": "run_done", "outputs": "{}"}

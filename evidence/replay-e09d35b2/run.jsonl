@@ -1,0 +1,7 @@
+{"ts": 1789304497.0867336, "run_id": "replay-e09d35b2", "kind": "replay_start", "artifact": "cap-dc8da714", "params": "{'member_id': '12345'}"}
+{"ts": 1789304497.087151, "run_id": "replay-e09d35b2", "kind": "step_start", "step": "1", "action": "fill"}
+{"ts": 1789304497.1444407, "run_id": "replay-e09d35b2", "kind": "step_retry", "step": "1", "after": "0"}
+{"ts": 1789304498.1529174, "run_id": "replay-e09d35b2", "kind": "step_retry", "step": "1", "after": "1.0"}
+{"ts": 1789304500.1670253, "run_id": "replay-e09d35b2", "kind": "step_retry", "step": "1", "after": "2.0"}
+{"ts": 1789304504.1784658, "run_id": "replay-e09d35b2", "kind": "step_retry", "step": "1", "after": "4.0"}
+{"ts": 1789304504.2141705, "run_id": "replay-e09d35b2", "kind": "replay_failure", "step": "1", "observed": "no locator in chain matched: "}

@@ -1,0 +1,7 @@
+{"ts": 1789317106.914631, "run_id": "replay-61c6c9a6", "kind": "replay_start", "artifact": "cap-9bff61e6", "params": "{'member_id': '99999'}"}
+{"ts": 1789317106.988574, "run_id": "replay-61c6c9a6", "kind": "step_start", "step": "1", "action": "fill"}
+{"ts": 1789317107.0699756, "run_id": "replay-61c6c9a6", "kind": "step_ok", "step": "1"}
+{"ts": 1789317107.0700555, "run_id": "replay-61c6c9a6", "kind": "step_start", "step": "2", "action": "click"}
+{"ts": 1789317107.1809611, "run_id": "replay-61c6c9a6", "kind": "step_ok", "step": "2"}
+{"ts": 1789317107.1810343, "run_id": "replay-61c6c9a6", "kind": "step_start", "step": "3", "action": "extract"}
+{"ts": 1789317107.2041345, "run_id": "replay-61c6c9a6", "kind": "business_outcome", "code": "member_not_found"}

@@ -1,0 +1,9 @@
+{
+  "run_id": "disc-4dfc867a",
+  "goal": "look up member 12345 and read their current savings balance",
+  "step": 7,
+  "reason": "agent repeated the same action 3x without progress",
+  "url": "http://localhost:8377/member/12345",
+  "screenshot": "evidence/disc-4dfc867a/intervention-step7.png",
+  "raised_at": 1789316951.5209966
+}

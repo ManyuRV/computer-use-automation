@@ -1,0 +1,119 @@
+[
+  {
+    "step": 1,
+    "action": "fill",
+    "chain": [
+      {
+        "strategy": "role",
+        "value": "",
+        "role": "textbox",
+        "name": "Member ID:"
+      }
+    ],
+    "value": "12345",
+    "risky": false,
+    "post_url": "http://localhost:8377/"
+  },
+  {
+    "step": 2,
+    "action": "click",
+    "chain": [
+      {
+        "strategy": "role",
+        "value": "",
+        "role": "button",
+        "name": "Search"
+      },
+      {
+        "strategy": "text",
+        "value": "Search",
+        "role": null,
+        "name": null
+      },
+      {
+        "strategy": "css",
+        "value": "body>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1)>form:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(3)>input:nth-child(1)",
+        "role": null,
+        "name": null
+      },
+      {
+        "strategy": "xpath",
+        "value": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/form[1]/table[1]/tbody[1]/tr[1]/td[3]/input[1]",
+        "role": null,
+        "name": null
+      }
+    ],
+    "value": null,
+    "risky": false,
+    "post_url": "http://localhost:8377/member/12345"
+  },
+  {
+    "step": 3,
+    "action": "navigate",
+    "url": "http://localhost:8377/member/12345/open-subaccount",
+    "post_url": "http://localhost:8377/member/12345/open-subaccount"
+  },
+  {
+    "step": 4,
+    "action": "select",
+    "chain": [
+      {
+        "strategy": "role",
+        "value": "",
+        "role": "combobox",
+        "name": "Account type:"
+      }
+    ],
+    "value": "Savings",
+    "risky": false,
+    "post_url": "http://localhost:8377/member/12345/open-subaccount"
+  },
+  {
+    "step": 5,
+    "action": "fill",
+    "chain": [
+      {
+        "strategy": "role",
+        "value": "",
+        "role": "textbox",
+        "name": "Initial deposit ($):"
+      }
+    ],
+    "value": "100",
+    "risky": false,
+    "post_url": "http://localhost:8377/member/12345/open-subaccount"
+  },
+  {
+    "step": 6,
+    "action": "click",
+    "chain": [
+      {
+        "strategy": "role",
+        "value": "",
+        "role": "button",
+        "name": "Submit Application"
+      },
+      {
+        "strategy": "text",
+        "value": "Submit Application",
+        "role": null,
+        "name": null
+      },
+      {
+        "strategy": "css",
+        "value": "body>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1)>form:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(2)>input:nth-child(1)",
+        "role": null,
+        "name": null
+      },
+      {
+        "strategy": "xpath",
+        "value": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/form[1]/table[1]/tbody[1]/tr[3]/td[2]/input[1]",
+        "role": null,
+        "name": null
+      }
+    ],
+    "value": null,
+    "risky": true,
+    "post_url": "http://localhost:8377/member/12345/open-subaccount"
+  }
+]

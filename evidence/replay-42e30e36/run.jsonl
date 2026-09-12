@@ -1,0 +1,14 @@
+{"ts": 1789317753.135253, "run_id": "replay-42e30e36", "kind": "replay_start", "artifact": "cap-02cb1fee", "params": "{'member_id': '12345'}"}
+{"ts": 1789317753.1960316, "run_id": "replay-42e30e36", "kind": "step_start", "step": "1", "action": "fill"}
+{"ts": 1789317753.2948143, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "1"}
+{"ts": 1789317753.294878, "run_id": "replay-42e30e36", "kind": "step_start", "step": "2", "action": "click"}
+{"ts": 1789317753.3959224, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "2"}
+{"ts": 1789317753.3959987, "run_id": "replay-42e30e36", "kind": "step_start", "step": "3", "action": "navigate"}
+{"ts": 1789317753.4788313, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "3"}
+{"ts": 1789317753.4789023, "run_id": "replay-42e30e36", "kind": "step_start", "step": "4", "action": "select"}
+{"ts": 1789317753.5287142, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "4"}
+{"ts": 1789317753.5287793, "run_id": "replay-42e30e36", "kind": "step_start", "step": "5", "action": "fill"}
+{"ts": 1789317753.5462093, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "5"}
+{"ts": 1789317753.5462792, "run_id": "replay-42e30e36", "kind": "step_start", "step": "6", "action": "click"}
+{"ts": 1789317753.688611, "run_id": "replay-42e30e36", "kind": "step_ok", "step": "6"}
+{"ts": 1789317753.6887255, "run_id": "replay-42e30e36", "kind": "replay_success", "outputs": "{}"}

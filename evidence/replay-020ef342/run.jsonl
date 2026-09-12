@@ -1,0 +1,9 @@
+{"ts": 1789317103.442965, "run_id": "replay-020ef342", "kind": "replay_start", "artifact": "cap-9bff61e6", "params": "{'member_id': '12345'}"}
+{"ts": 1789317103.5358768, "run_id": "replay-020ef342", "kind": "step_start", "step": "1", "action": "fill"}
+{"ts": 1789317103.6210568, "run_id": "replay-020ef342", "kind": "step_ok", "step": "1"}
+{"ts": 1789317103.6211364, "run_id": "replay-020ef342", "kind": "step_start", "step": "2", "action": "click"}
+{"ts": 1789317103.6949806, "run_id": "replay-020ef342", "kind": "step_ok", "step": "2"}
+{"ts": 1789317103.6950586, "run_id": "replay-020ef342", "kind": "step_start", "step": "3", "action": "extract"}
+{"ts": 1789317103.757914, "run_id": "replay-020ef342", "kind": "extract", "name": "current_savings_balance", "value": "$4,812.07"}
+{"ts": 1789317103.7668855, "run_id": "replay-020ef342", "kind": "step_ok", "step": "3"}
+{"ts": 1789317103.7765484, "run_id": "replay-020ef342", "kind": "replay_success", "outputs": "{'current_savings_balance': '$4,812.07'}"}

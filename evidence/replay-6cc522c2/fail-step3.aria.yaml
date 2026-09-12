@@ -1,0 +1,26 @@
+- table:
+  - rowgroup:
+    - row "MemberServ Console v3.2 (Tenant A)":
+      - cell "MemberServ Console v3.2 (Tenant A)"
+    - 'row "Open Sub-Account for member 12345 Account type: -- choose -- Initial deposit ($): Submit Application"':
+      - 'cell "Open Sub-Account for member 12345 Account type: -- choose -- Initial deposit ($): Submit Application"':
+        - text: Open Sub-Account for member 12345
+        - table:
+          - rowgroup:
+            - 'row "Account type: -- choose --"':
+              - cell "Account type:"
+              - cell "-- choose --":
+                - combobox:
+                  - option "-- choose --" [selected]
+                  - option "Savings"
+                  - option "Checking"
+            - row "Initial deposit ($):":
+              - cell "Initial deposit ($):"
+              - cell:
+                - textbox
+            - row "Submit Application":
+              - cell
+              - cell "Submit Application":
+                - button "Submit Application"
+    - row "(c) 1998-2026 MemberServ. Unauthorized access prohibited.":
+      - cell "(c) 1998-2026 MemberServ. Unauthorized access prohibited."

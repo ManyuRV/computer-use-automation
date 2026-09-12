@@ -1,0 +1,168 @@
+{
+  "schema_version": "cuas/1.0",
+  "id": "cap-9bff61e6",
+  "name": "look up member 12345 and read their current savings balance",
+  "description": "look up member 12345 and read their current savings balance",
+  "target": {
+    "app": "MemberServ-demo",
+    "base_url": "http://localhost:8377/",
+    "entry_route": "/"
+  },
+  "inputs": [
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "description": "Member ID to look up",
+      "sensitive": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "balance",
+      "type": "currency",
+      "description": "Current savings balance"
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "action": "fill",
+      "locators": [
+        {
+          "strategy": "role",
+          "value": "",
+          "role": "textbox",
+          "name": null
+        },
+        {
+          "strategy": "css",
+          "value": "body>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1)>form:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>input:nth-child(1)",
+          "role": null,
+          "name": null
+        },
+        {
+          "strategy": "xpath",
+          "value": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/input[1]",
+          "role": null,
+          "name": null
+        }
+      ],
+      "value": "{{inputs.member_id}}",
+      "url": null,
+      "extract_as": null,
+      "extract_mode": null,
+      "checkpoint": null,
+      "on_error": [],
+      "risky": false,
+      "note": ""
+    },
+    {
+      "id": 2,
+      "action": "click",
+      "locators": [
+        {
+          "strategy": "role",
+          "value": "",
+          "role": "button",
+          "name": "Search"
+        },
+        {
+          "strategy": "text",
+          "value": "Search",
+          "role": null,
+          "name": null
+        },
+        {
+          "strategy": "css",
+          "value": "body>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1)>form:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(3)>input:nth-child(1)",
+          "role": null,
+          "name": null
+        },
+        {
+          "strategy": "xpath",
+          "value": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/form[1]/table[1]/tbody[1]/tr[1]/td[3]/input[1]",
+          "role": null,
+          "name": null
+        }
+      ],
+      "value": null,
+      "url": null,
+      "extract_as": null,
+      "extract_mode": null,
+      "checkpoint": null,
+      "on_error": [],
+      "risky": false,
+      "note": ""
+    },
+    {
+      "id": 3,
+      "action": "extract",
+      "locators": [
+        {
+          "strategy": "role",
+          "value": "",
+          "role": "cell",
+          "name": "Savings Balance"
+        },
+        {
+          "strategy": "text",
+          "value": "Savings Balance",
+          "role": null,
+          "name": null
+        },
+        {
+          "strategy": "css",
+          "value": "body>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1)",
+          "role": null,
+          "name": null
+        },
+        {
+          "strategy": "xpath",
+          "value": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[3]/td[1]",
+          "role": null,
+          "name": null
+        }
+      ],
+      "value": null,
+      "url": null,
+      "extract_as": "current_savings_balance",
+      "extract_mode": "adjacent_cell",
+      "checkpoint": {
+        "type": "locator_present",
+        "value": "",
+        "locator": {
+          "strategy": "role",
+          "value": "",
+          "role": "cell",
+          "name": "Savings Balance"
+        }
+      },
+      "on_error": [],
+      "risky": false,
+      "note": ""
+    }
+  ],
+  "success": {
+    "type": "locator_present",
+    "value": "",
+    "locator": {
+      "strategy": "role",
+      "value": "",
+      "role": "cell",
+      "name": "Savings Balance"
+    }
+  },
+  "business_outcomes": {
+    "member_not_found": {
+      "text": "No member found",
+      "status": null
+    }
+  },
+  "provenance": {
+    "run_id": "disc-f5bef8bc",
+    "recorded_at": "2026-09-13T12:31:24",
+    "model": "openai/gpt-4o-mini",
+    "llm_driven": true
+  }
+}

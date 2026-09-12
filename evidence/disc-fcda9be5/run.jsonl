@@ -1,0 +1,91 @@
+{"ts": 1789317290.9425035, "run_id": "disc-fcda9be5", "kind": "run_start", "goal": "open a new savings sub-account for member 12345 with an opening deposit of 100 dollars and reach the confirmation screen", "entry": "http://localhost:8377/"}
+{"ts": 1789317292.3356602, "run_id": "disc-fcda9be5", "kind": "decision", "step": "1", "action_kind": "fill", "reason": "Filling in the member ID to search for the member.", "name": ""}
+{"ts": 1789317293.003226, "run_id": "disc-fcda9be5", "kind": "decision", "step": "2", "action_kind": "click", "reason": "Proceeding to search for the member.", "name": "Search"}
+{"ts": 1789317294.2917519, "run_id": "disc-fcda9be5", "kind": "decision", "step": "3", "action_kind": "click", "reason": "Navigating to the sub-account creation page.", "name": "Open a new sub-account"}
+{"ts": 1789317295.0348024, "run_id": "disc-fcda9be5", "kind": "decision", "step": "4", "action_kind": "select", "reason": "Selecting the account type for the new sub-account.", "name": "Account type:"}
+{"ts": 1789317306.0459359, "run_id": "disc-fcda9be5", "kind": "action_error", "step": "4", "error": "Locator.select_option: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"-- choose --\").first\n    - locator resolved to <option value=\"\">-- choose --</option>\n  - attempting select option action\n    2 \u00d7 waiting for element to be visible and enabled\n      - element is not visible\n    - retrying select option action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and enabled\n      - element is not visible\n    - retrying select option action\n      - waiting 100ms\n    16 \u00d7 waiting for element to be visible and enabled\n       - element is not visible\n     - retrying select option action\n       - waiting 500ms\n"}
+{"ts": 1789317306.8335476, "run_id": "disc-fcda9be5", "kind": "decision", "step": "5", "action_kind": "fill", "reason": "Filling in the initial deposit amount.", "name": ""}
+{"ts": 1789317307.5499344, "run_id": "disc-fcda9be5", "kind": "decision", "step": "6", "action_kind": "click", "reason": "Proceeding to submit the application for the new savings sub-account.", "name": "Submit Application"}
+{"ts": 1789317307.5500464, "run_id": "disc-fcda9be5", "kind": "risky_action", "step": "6", "name": "Submit Application", "handling": "confirm"}
+{"ts": 1789317307.605724, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "risky action 'Submit Application' requires human confirmation", "step": "6"}
+{"ts": 1789317342.7252426, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317342.7254415, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "6"}
+{"ts": 1789317343.5969117, "run_id": "disc-fcda9be5", "kind": "decision", "step": "7", "action_kind": "stuck", "reason": "Encountered a validation error preventing submission.", "name": ""}
+{"ts": 1789317343.629935, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing submission.", "step": "7"}
+{"ts": 1789317343.6300426, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317343.6300669, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "7"}
+{"ts": 1789317344.2419214, "run_id": "disc-fcda9be5", "kind": "decision", "step": "8", "action_kind": "stuck", "reason": "Encountered a validation error preventing progress.", "name": ""}
+{"ts": 1789317344.2783048, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing progress.", "step": "8"}
+{"ts": 1789317344.2784317, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317344.2786677, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "8"}
+{"ts": 1789317345.0143833, "run_id": "disc-fcda9be5", "kind": "decision", "step": "9", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317345.051377, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "9"}
+{"ts": 1789317345.0514617, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317345.0515807, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "9"}
+{"ts": 1789317345.7410846, "run_id": "disc-fcda9be5", "kind": "decision", "step": "10", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317345.768583, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "10"}
+{"ts": 1789317345.7686675, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317345.7686803, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "10"}
+{"ts": 1789317346.4692025, "run_id": "disc-fcda9be5", "kind": "decision", "step": "11", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317346.4983664, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "11"}
+{"ts": 1789317346.4984527, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317346.498616, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "11"}
+{"ts": 1789317347.2107048, "run_id": "disc-fcda9be5", "kind": "decision", "step": "12", "action_kind": "stuck", "reason": "Encountered a validation error preventing submission.", "name": ""}
+{"ts": 1789317347.2487319, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing submission.", "step": "12"}
+{"ts": 1789317347.2488785, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317347.2489185, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "12"}
+{"ts": 1789317347.9262333, "run_id": "disc-fcda9be5", "kind": "decision", "step": "13", "action_kind": "stuck", "reason": "Encountered a validation error preventing submission.", "name": ""}
+{"ts": 1789317347.9577, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing submission.", "step": "13"}
+{"ts": 1789317347.9577792, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317347.9578025, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "13"}
+{"ts": 1789317348.6510854, "run_id": "disc-fcda9be5", "kind": "decision", "step": "14", "action_kind": "stuck", "reason": "Encountered a validation error preventing progress.", "name": ""}
+{"ts": 1789317348.6956778, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing progress.", "step": "14"}
+{"ts": 1789317348.6959453, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317348.6960018, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "14"}
+{"ts": 1789317349.3128831, "run_id": "disc-fcda9be5", "kind": "decision", "step": "15", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317349.3419762, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "15"}
+{"ts": 1789317349.342067, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317349.3420806, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "15"}
+{"ts": 1789317350.0190375, "run_id": "disc-fcda9be5", "kind": "decision", "step": "16", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317350.0595484, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "16"}
+{"ts": 1789317350.0596359, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317350.0596497, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "16"}
+{"ts": 1789317350.7667286, "run_id": "disc-fcda9be5", "kind": "decision", "step": "17", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317350.805439, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "17"}
+{"ts": 1789317350.8057349, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317350.8057766, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "17"}
+{"ts": 1789317351.6781943, "run_id": "disc-fcda9be5", "kind": "decision", "step": "18", "action_kind": "stuck", "reason": "Encountered a validation error preventing progress.", "name": ""}
+{"ts": 1789317351.7079132, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing progress.", "step": "18"}
+{"ts": 1789317351.7079885, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317351.7080016, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "18"}
+{"ts": 1789317352.3634193, "run_id": "disc-fcda9be5", "kind": "decision", "step": "19", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317352.4149785, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "19"}
+{"ts": 1789317352.41511, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317352.4151382, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "19"}
+{"ts": 1789317353.07758, "run_id": "disc-fcda9be5", "kind": "decision", "step": "20", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317353.1072621, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "20"}
+{"ts": 1789317353.107339, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317353.107352, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "20"}
+{"ts": 1789317353.7765841, "run_id": "disc-fcda9be5", "kind": "decision", "step": "21", "action_kind": "stuck", "reason": "Encountered a validation error preventing progress.", "name": ""}
+{"ts": 1789317353.808681, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing progress.", "step": "21"}
+{"ts": 1789317353.8087878, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317353.8088093, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "21"}
+{"ts": 1789317354.3711555, "run_id": "disc-fcda9be5", "kind": "decision", "step": "22", "action_kind": "stuck", "reason": "Encountered a validation error preventing submission.", "name": ""}
+{"ts": 1789317354.3996582, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing submission.", "step": "22"}
+{"ts": 1789317354.3997405, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317354.3997548, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "22"}
+{"ts": 1789317355.1552904, "run_id": "disc-fcda9be5", "kind": "decision", "step": "23", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317355.1807642, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "23"}
+{"ts": 1789317355.1808414, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317355.1808555, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "23"}
+{"ts": 1789317355.845227, "run_id": "disc-fcda9be5", "kind": "decision", "step": "24", "action_kind": "stuck", "reason": "Encountered a validation error preventing submission.", "name": ""}
+{"ts": 1789317355.873694, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Encountered a validation error preventing submission.", "step": "24"}
+{"ts": 1789317355.8737674, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317355.8737807, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "24"}
+{"ts": 1789317356.5030353, "run_id": "disc-fcda9be5", "kind": "decision", "step": "25", "action_kind": "stuck", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "name": ""}
+{"ts": 1789317356.5417693, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "Validation error indicates the account type or minimum deposit requirement was not met.", "step": "25"}
+{"ts": 1789317356.5418491, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317356.5418625, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "25"}
+{"ts": 1789317356.574619, "run_id": "disc-fcda9be5", "kind": "intervention_raised", "reason": "max steps reached", "step": "25"}
+{"ts": 1789317356.5746965, "run_id": "disc-fcda9be5", "kind": "control_returned", "human_actions": "[]"}
+{"ts": 1789317356.574711, "run_id": "disc-fcda9be5", "kind": "resumed_after_human", "step": "25"}

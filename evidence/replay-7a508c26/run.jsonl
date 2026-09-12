@@ -1,0 +1,7 @@
+{"ts": 1789304521.712652, "run_id": "replay-7a508c26", "kind": "replay_start", "artifact": "cap-dc8da714", "params": "{'member_id': '99999'}"}
+{"ts": 1789304521.780635, "run_id": "replay-7a508c26", "kind": "step_start", "step": "1", "action": "fill"}
+{"ts": 1789304521.8808978, "run_id": "replay-7a508c26", "kind": "step_ok", "step": "1"}
+{"ts": 1789304521.8809566, "run_id": "replay-7a508c26", "kind": "step_start", "step": "2", "action": "click"}
+{"ts": 1789304521.9837356, "run_id": "replay-7a508c26", "kind": "step_ok", "step": "2"}
+{"ts": 1789304521.9837935, "run_id": "replay-7a508c26", "kind": "step_start", "step": "3", "action": "extract"}
+{"ts": 1789304522.0202243, "run_id": "replay-7a508c26", "kind": "business_outcome", "code": "member_not_found"}
