@@ -1,7 +1,0 @@
-{"ts": 1789317575.9948115, "run_id": "replay-6cc522c2", "kind": "replay_start", "artifact": "cap-d48b9d39", "params": "{'member_id': '12345'}"}
-{"ts": 1789317576.0760226, "run_id": "replay-6cc522c2", "kind": "step_start", "step": "1", "action": "fill"}
-{"ts": 1789317576.1509461, "run_id": "replay-6cc522c2", "kind": "step_ok", "step": "1"}
-{"ts": 1789317576.1510248, "run_id": "replay-6cc522c2", "kind": "step_start", "step": "2", "action": "click"}
-{"ts": 1789317576.2501585, "run_id": "replay-6cc522c2", "kind": "step_ok", "step": "2"}
-{"ts": 1789317576.250233, "run_id": "replay-6cc522c2", "kind": "step_start", "step": "3", "action": "navigate"}
-{"ts": 1789317583.4188275, "run_id": "replay-6cc522c2", "kind": "replay_failure", "step": "3", "observed": "checkpoint not satisfied after retries"}

@@ -1,9 +1,0 @@
-{
-  "run_id": "disc-fcda9be5",
-  "goal": "open a new savings sub-account for member 12345 with an opening deposit of 100 dollars and reach the confirmation screen",
-  "step": 25,
-  "reason": "max steps reached",
-  "url": "http://localhost:8377/member/12345/open-subaccount",
-  "screenshot": "evidence/disc-fcda9be5/intervention-step25.png",
-  "raised_at": 1789317356.574393
-}

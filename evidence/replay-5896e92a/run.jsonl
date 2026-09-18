@@ -1,9 +1,0 @@
-{"ts": 1789304520.214383, "run_id": "replay-5896e92a", "kind": "replay_start", "artifact": "cap-dc8da714", "params": "{'member_id': '67890'}"}
-{"ts": 1789304520.2576177, "run_id": "replay-5896e92a", "kind": "step_start", "step": "1", "action": "fill"}
-{"ts": 1789304520.3530579, "run_id": "replay-5896e92a", "kind": "step_ok", "step": "1"}
-{"ts": 1789304520.3531158, "run_id": "replay-5896e92a", "kind": "step_start", "step": "2", "action": "click"}
-{"ts": 1789304520.4340758, "run_id": "replay-5896e92a", "kind": "step_ok", "step": "2"}
-{"ts": 1789304520.4341354, "run_id": "replay-5896e92a", "kind": "step_start", "step": "3", "action": "extract"}
-{"ts": 1789304520.4956741, "run_id": "replay-5896e92a", "kind": "extract", "name": "balance", "value": "$19,203.55"}
-{"ts": 1789304520.5030174, "run_id": "replay-5896e92a", "kind": "step_ok", "step": "3"}
-{"ts": 1789304520.5096748, "run_id": "replay-5896e92a", "kind": "replay_success", "outputs": "{'balance': '$19,203.55'}"}

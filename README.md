@@ -1,7 +1,11 @@
 # Computer-use automation (interface.ai take-home, Assignment A)
 
+[![CI](https://github.com/ManyuRV/computer-use-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/ManyuRV/computer-use-automation/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An LLM drives a web app once to figure out how to do a task, that run gets saved as a
-replayable artifact, and replays run with no model involved. The target is a local
+replayable artifact, and replays run with no model involved.
+
+![Successful member lookup in the legacy demo app](docs/screenshots/replay-success.png) The target is a local
 Flask app built to mimic real legacy bank back-office software: server-rendered,
 table layouts, no ids, no test attributes. That's the environment this system is
 designed to run against, so that's what I built and tested it against.
@@ -16,7 +20,7 @@ designed to run against, so that's what I built and tested it against.
 
 ```
 python3 -m venv .venv && source .venv/bin/activate
-pip install playwright flask pydantic openai
+pip install -r requirements.txt
 ```
 
 ## Run it
@@ -66,7 +70,7 @@ cleanly and dumps a screenshot and a11y snapshot into the run's evidence dir.
   escalation, evidence
 - `app/server.py` - the demo target
 - `artifacts/` - recorded capabilities (schema `cuas/1.0`)
-- `evidence/<run_id>/` - decision logs, failure screenshots, intervention requests
+- `evidence/` - a curated successful discovery, risky-action intervention, and structured replay failure
 - `REPORT.md` - design writeup. `docs/` has the requirements checklist, ADRs, and the
   validation log
 

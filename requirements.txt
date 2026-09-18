@@ -1,0 +1,5 @@
+flask>=3.0,<4
+openai>=1.0,<2
+playwright>=1.48,<2
+pydantic>=2.8,<3
+pytest>=8.0,<9
