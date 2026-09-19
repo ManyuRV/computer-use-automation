@@ -70,7 +70,7 @@ cleanly and dumps a screenshot and a11y snapshot into the run's evidence dir.
   escalation, evidence
 - `app/server.py` - the demo target
 - `artifacts/` - recorded capabilities (schema `cuas/1.0`)
-- `evidence/` - a curated successful discovery, risky-action intervention, and structured replay failure
+- `evidence/` - curated successful discovery and risky-action intervention runs
 - `REPORT.md` - design writeup. `docs/` has the requirements checklist, ADRs, and the
   validation log
 
